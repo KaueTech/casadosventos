@@ -40,19 +40,7 @@ export default function CDU() {
 
   const [containerErrors, setContainerErrors] = useState({})
 
-  const [pessoas, setPessoas] = useState<CDUData['pessoas']>([{
-    id: '0',
-    nome: 'Kauê Victor Oliveira Dias',
-    nacionalidade: 'brasileiro',
-    profissao: 'programador',
-    rg: '5.720.287',
-    expeditor: 'SDS',
-    uf: 'PE',
-    cpf: '131.297.664-05',
-    estado: 'PB',
-    cep: '58180-000',
-    cidade: 'PEDRA LAVRADA'
-  } as CDUData['pessoas'][0]])
+  const [pessoas, setPessoas] = useState<CDUData['pessoas']>([])
 
   const [contasBancarias, setContasBancarias] = useState<CDUData['contasBancarias']>([])
 
