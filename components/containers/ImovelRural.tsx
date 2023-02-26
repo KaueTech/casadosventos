@@ -76,6 +76,7 @@ export function ImovelRural({ form: formRef, initialData, ...rest }: ImovelRural
                       decimalScale={4}
                       decimalsLimit={4}
                       groupSeparator='.'
+                      decimalSeparator=","
                       allowNegativeValue={false}
                       onValueChange={(_, __, { float }) => {
                         formRef.current.getFieldRef('imovel.area.total.valor').current?.setAttribute('data-value', float || 0)
@@ -103,6 +104,7 @@ export function ImovelRural({ form: formRef, initialData, ...rest }: ImovelRural
                         decimalScale={4}
                         decimalsLimit={4}
                         groupSeparator='.'
+                        decimalSeparator=","
                         allowNegativeValue={false}
                         onValueChange={(_, __, { float }) => {
                           formRef.current.getFieldRef('imovel.area.parcial.valor').current?.setAttribute('data-value', float)

@@ -34,6 +34,7 @@ export function Pagamento({ form: formRef, ...rest }: PagamentoProps) {
                 decimalScale={2}
                 decimalsLimit={2}
                 groupSeparator='.'
+                decimalSeparator=","
                 allowNegativeValue={false}
                 onValueChange={(_, __, { float }) => {
                   formRef.current.getFieldRef('pagamento.valor').current.setAttribute('data-value', float || "")
